@@ -44,7 +44,7 @@ namespace StudentAPI.Tests.Controllers
             // Arrange
             var mock = new Mock<IStudentService>();
             int ciNewStudent = 87345678;
-            var estudiante = new Student { CI = ciNewStudent, Nombre = "Laura Sifuentes", Nota = 60 };
+            var estudiante = new Estudiante { CI = ciNewStudent, Nombre = "Laura Sifuentes", Nota = 60 };
 
             mock.Setup(s => s.GetByCi(ciNewStudent)).Returns(estudiante);
 
@@ -55,7 +55,7 @@ namespace StudentAPI.Tests.Controllers
 
             // Assert
             Assert.NotNull(resultado); // Asegura que el resultado no sea null
-            Assert.IsType<Student>(resultado); // Asegura que el tipo sea Student
+            Assert.IsType<Estudiante>(resultado); // Asegura que el tipo sea Student
             Assert.Equal("Laura Sifuentes", resultado.Nombre); // El nombre debe coincidir
         }
 
@@ -65,7 +65,7 @@ namespace StudentAPI.Tests.Controllers
             // Arrange
             var mock = new Mock<IStudentService>();
             int ciNewStudent = 87345678;
-            var estudiante = new Student { CI = ciNewStudent, Nombre = "Laura Sifuentes", Nota = 60 };            
+            var estudiante = new Estudiante { CI = ciNewStudent, Nombre = "Laura Sifuentes", Nota = 60 };            
 
             mock.Setup(s => s.GetByCi(ciNewStudent)).Returns(estudiante);
 
@@ -76,7 +76,7 @@ namespace StudentAPI.Tests.Controllers
 
             // Assert
             Assert.NotNull(resultado); // Asegura que el resultado no sea null
-            Assert.IsType<Student>(resultado); // Asegura que el tipo sea Student
+            Assert.IsType<Estudiante>(resultado); // Asegura que el tipo sea Student
             Assert.Equal(ciNewStudent, resultado.CI); // El CI debe coincidir
         }
 

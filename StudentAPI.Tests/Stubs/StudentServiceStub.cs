@@ -5,24 +5,24 @@ namespace StudentAPI.Tests.Stubs
 {
     public class StudentServiceStub : IStudentService
     {
-        private List<Student> _students;
+        private List<Estudiante> _students;
 
         public StudentServiceStub()
         {
-            _students = new List<Student>()
+            _students = new List<Estudiante>()
             {
-                new Student { CI = 45622343, Nombre = "Ambar Choque", Nota = 95, },
-                new Student { CI = 7838712, Nombre = "Alexander Choque Polo", Nota = 90, },
-                new Student { CI = 7563434, Nombre = "Jeronimo Perez", Nota = 40, },
+                new Estudiante { CI = 45622343, Nombre = "Ambar Choque", Nota = 95, },
+                new Estudiante { CI = 7838712, Nombre = "Alexander Choque Polo", Nota = 90, },
+                new Estudiante { CI = 7563434, Nombre = "Jeronimo Perez", Nota = 40, },
             };
         }
 
-        public List<Student> GetAll()
+        public List<Estudiante> GetAll()
         {
             return _students;
         }
 
-        public Student GetByCi(int ci)
+        public Estudiante GetByCi(int ci)
         {
             return _students.FirstOrDefault(s => s.CI == ci);
         }
@@ -36,13 +36,13 @@ namespace StudentAPI.Tests.Stubs
             return student.Nota >= 51;
         }
 
-        public Student Create(Student student)
+        public Estudiante Create(Estudiante student)
         {
             _students.Add(student);
             return student;
         }
 
-        public Student Update(int ci, Student updatedStudent)
+        public Estudiante Update(int ci, Estudiante updatedStudent)
         {
             var existing = _students.FirstOrDefault(s => s.CI == ci);
             if (existing != null)
@@ -53,7 +53,7 @@ namespace StudentAPI.Tests.Stubs
             return existing;
         }
 
-        public Student Delete(int ci)
+        public Estudiante Delete(int ci)
         {
             var student = _students.FirstOrDefault(s => s.CI == ci);
             if (student != null)

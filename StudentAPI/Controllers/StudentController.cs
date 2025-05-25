@@ -18,31 +18,31 @@ namespace StudentAPI.Controllers
         }
 
         [HttpGet]
-        public List<Student> GetAll()
+        public List<Estudiante> GetAll()
         {
             return _studentService.GetAll();
         }
 
         [HttpGet("{ci}")]
-        public Student GetByCi(int ci)
+        public Estudiante GetByCi(int ci)
         {
             return _studentService.GetByCi(ci);
         }
 
         [HttpPost]
-        public Student Create(Student student)
+        public Estudiante Create(Estudiante student)
         {
             return _studentService.Create(student);
         }
 
         [HttpPut("{ci}")]
-        public Student Update(int ci, Student updatedStudent)
+        public Estudiante Update(int ci, Estudiante updatedStudent)
         {
             return _studentService.Update(ci, updatedStudent);
         }
 
         [HttpDelete("{ci}")]
-        public Student Delete(int ci)
+        public Estudiante Delete(int ci)
         {
             return _studentService.Delete(ci);
         }

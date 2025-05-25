@@ -4,11 +4,11 @@ namespace StudentAPI.Services
 {
     public interface IStudentService
     {
-        List<Student> GetAll();
-        Student GetByCi(int ci);
-        Student Create(Student student);
-        Student Update(int ci, Student updatedStudent);
-        Student Delete(int ci);
+        List<Estudiante> GetAll();
+        Estudiante GetByCi(int ci);
+        Estudiante Create(Estudiante student);
+        Estudiante Update(int ci, Estudiante updatedStudent);
+        Estudiante Delete(int ci);
         Boolean HasApproved(int ci);
     }
 }

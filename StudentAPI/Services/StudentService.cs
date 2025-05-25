@@ -4,38 +4,38 @@ namespace StudentAPI.Services
 {
     public class StudentService : IStudentService
     {
-        private List<Student> _students;
+        private List<Estudiante> _students;
 
         public StudentService()
         {
-            _students = new List<Student>
+            _students = new List<Estudiante>
             {
-                new Student { CI = 7838712, Nombre = "Alexander Choque Polo", Nota = 97 }
+                new Estudiante { CI = 7838712, Nombre = "Alexander Choque Polo", Nota = 97 }
             };
             
         }
 
-        public List<Student> GetAll()
+        public List<Estudiante> GetAll()
         {
             return _students;
         }
 
-        public Student GetByCi(int ci)
+        public Estudiante GetByCi(int ci)
         {
             var student = _students.Find(s => s.CI == ci);
             if (student == null)
             {
-                student = new Student { CI = -1, Nombre = "Not Found", Nota = 0, };
+                student = new Estudiante { CI = -1, Nombre = "Not Found", Nota = 0, };
             }
             return student;
         }
 
-        public Student Create(Student student)
+        public Estudiante Create(Estudiante student)
         {
-            Student createdStudent;
+            Estudiante createdStudent;
             if (student.Nota < 0 || student.Nota > 100)
             {
-                createdStudent = new Student { CI = -1, Nombre = student.Nombre + " | Nota Not Available", Nota = 0, };
+                createdStudent = new Estudiante { CI = -1, Nombre = student.Nombre + " | Nota Not Available", Nota = 0, };
             }
             else
             {
@@ -46,7 +46,7 @@ namespace StudentAPI.Services
             return createdStudent;
         }
 
-        public Student Update(int ci, Student updatedStudent)
+        public Estudiante Update(int ci, Estudiante updatedStudent)
         {
             var student = _students.FirstOrDefault(s => s.CI == ci);
 
@@ -56,7 +56,7 @@ namespace StudentAPI.Services
             return student;
         }
 
-        public Student Delete(int ci)
+        public Estudiante Delete(int ci)
         {
             var student = _students.FirstOrDefault(s => s.CI == ci);
             if (student != null)
