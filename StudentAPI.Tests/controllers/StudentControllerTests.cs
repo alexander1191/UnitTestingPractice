@@ -16,7 +16,7 @@ namespace StudentAPI.Tests.Controllers
             int studentCI = 7838712; // Nota 90 de Alexander
 
             // Act
-            var result = controller.IsApproved(studentCI);
+            var result = controller.HasApproved(studentCI);
 
             // Assert
             Assert.IsType<bool>(result); // Debe ser un booleano
@@ -31,7 +31,7 @@ namespace StudentAPI.Tests.Controllers
             int studentCI = 7563434; // Nota 40 de Jeronimo
 
             // Act
-            var result = controller.IsApproved(studentCI);
+            var result = controller.HasApproved(studentCI);
 
             // Assert
             Assert.IsType<bool>(result); // Debe ser un booleano

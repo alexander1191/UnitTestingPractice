@@ -67,7 +67,7 @@ namespace StudentAPI.Services
             return null;
         }
 
-        public Boolean IsApproved(int ci)
+        public Boolean HasApproved(int ci)
         {
             var student = _students.FirstOrDefault(p => p.CI == ci);
             if (student == null)

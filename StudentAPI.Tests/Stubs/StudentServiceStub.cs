@@ -27,7 +27,7 @@ namespace StudentAPI.Tests.Stubs
             return _students.FirstOrDefault(s => s.CI == ci);
         }
 
-        public bool IsApproved(int ci)
+        public bool HasApproved(int ci)
         {
             var student = _students.FirstOrDefault(p => p.CI == ci);
             if (student == null)

@@ -223,3 +223,4 @@ D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI.Tests\obj\Debug\net9
 D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI.Tests\obj\Debug\net9.0\StudentAPI.Tests.pdb
 D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI.Tests\obj\Debug\net9.0\StudentAPI.Tests.genruntimeconfig.cache
 D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI.Tests\obj\Debug\net9.0\ref\StudentAPI.Tests.dll
+D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI.Tests\obj\Debug\net9.0\StudentAPI.Tests.sourcelink.json

@@ -48,9 +48,9 @@ namespace StudentAPI.Controllers
         }
 
         [HttpGet("is-approved{ci}")]
-        public bool IsApproved(int ci)
+        public bool HasApproved(int ci)
         {
-            return _studentService.IsApproved(ci);
+            return _studentService.HasApproved(ci);
         }
     }
 }

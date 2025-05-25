@@ -9,6 +9,6 @@ namespace StudentAPI.Services
         Student Create(Student student);
         Student Update(int ci, Student updatedStudent);
         Student Delete(int ci);
-        Boolean IsApproved(int ci);
+        Boolean HasApproved(int ci);
     }
 }

@@ -73,3 +73,4 @@ D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI\obj\Debug\net9.0\ref
 D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI\obj\Debug\net9.0\StudentAPI.pdb
 D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI\obj\Debug\net9.0\StudentAPI.genruntimeconfig.cache
 D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI\obj\Debug\net9.0\ref\StudentAPI.dll
+D:\Diplomado\Modulo II\Final\UnitTestingPractice\StudentAPI\obj\Debug\net9.0\StudentAPI.sourcelink.json
